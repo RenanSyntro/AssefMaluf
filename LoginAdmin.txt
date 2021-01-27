@@ -1,7 +1,1 @@
-Computador:
-Login: malufMaq1@outlook.com
-Senha: adminMalufMaq
-
-Mikrotik:
-Login: admin
-Senha: maluf@Syntro!85
+DF
