@@ -1,0 +1,66 @@
+//- configuracao para servidor de api.
+//no visual code mudar o terminal para git bash
+
+//como instalar yarn
+choco install yarn
+
+//para instalar aplicacao
+yarn
+
+//psql
+psql -U postgres
+\c
+
+senha: admin
+
+\l = lista bancos.
+\c nomeDoBanco = conecta no banco.
+\conninfo = mostra dados da conexao.
+\d = lista tabelas do banco de dados.
+
+link: http://www.bosontreinamentos.com.br/postgresql-banco-dados/como-listar-bancos-de-dados-e-tabelas-no-postgresql/
+monstra mais conteudo sobre comando do banco.
+
+//criando base de dados
+create database maluf;
+
+//instalando knex
+yarn add knex
+
+//comandos do knex
+https://devhints.io/knex
+
+//alterar senha do banco conforme senha definida na instalacao do postgresql, a senha deve ser definida no arquivo knexfile.js
+
+//cria as tabelas.
+node_modules/.bin/knex migrate:latest
+
+//popula dados do seed nas tabelas.
+node_modules/.bin/knex seed:run
+
+//start aplicacao
+yarn start
+
+//- configuracao para front end.
+
+//instalacao da aplicacao
+yarn
+
+//rodar a aplicacao
+yarn start
+
+
+GIT...
+
+…or create a new repository on the command line
+echo "# Maluf" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/RenanSyntro/Maluf.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/RenanSyntro/Maluf.git
+git branch -M main
+git push -u origin main
